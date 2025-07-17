@@ -85,5 +85,11 @@ public class SistemaLivro {
         "\nNovo usado: "+livro_livraria.getNovoUsado();
         System.out.println("Livro Livraria: "+mensagem);
     
+        Livro novoLivro = new Livro();
+        System.out.println("Novo Livro: "+novoLivro.getTitulo());
+        novoLivro.setTitulo("Novo Título");
+        System.out.println("Novo livro: "+novoLivro.getTitulo());
+
+
     }  
 }

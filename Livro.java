@@ -6,6 +6,15 @@ public class Livro {
     private int nrPaginas;
     private int edicao;
 
+    // Metodo Construtor (serve para construir seu objeto com valores default)
+    Livro(){
+        this.codigo = 0;
+        this.titulo = "Nenhum";
+        this.autor = "";
+        this.editora = "";
+        this.nrPaginas = 0;
+        this.edicao = 0;
+    }
 
     // Metodo de acesso á um atributo que é privado Código
     public int getCodigo(){
@@ -55,7 +64,6 @@ public class Livro {
     public void setEdicao (int edicao){
         this.edicao = edicao;
     }
-
 
     public void Ler(){
         System.out.println("Estou lendo...");
