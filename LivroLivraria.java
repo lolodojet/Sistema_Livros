@@ -39,8 +39,22 @@ public class LivroLivraria extends Livro{
         this.categoria = categoria;
     }
 
-
     public void Vender(){
         System.out.println("Estou vendendo...");
+    }
+
+    @Override 
+    public void Localizar(){
+        System.out.println("Estou localizando o livro de livraria");
+    }
+
+    @Override
+    public void Cadastrar(){
+        System.out.println("Estou cadastrando o livro de livraria");
+    }
+
+    @Override
+    public void Ler(){
+        System.out.println("Estou lendo o livro de livraria");
     }
 }

@@ -7,8 +7,22 @@ public class LivroBiblioteca extends Livro{
     private String nomeQuemEmprestou;
     private int prazoEntrega;
 
-    // Metodos
+    // Método construtor (tem que ter o mesmo nome da classe)
 
+    LivroBiblioteca(){}
+
+    LivroBiblioteca(int codigo,String titulo, String autor, String editora, int nrPaginas, int edicao, String localPrateleira, String categoria, String nomeQuemEmprestou, int prazoEntrega){
+
+        // Acesso ao método construtor PAI (Livro)
+        super(codigo, titulo, autor, editora, nrPaginas, edicao);
+
+        this.localPrateleira = localPrateleira;
+        this.categoria = categoria;
+        this.nomeQuemEmprestou = nomeQuemEmprestou;
+        this.prazoEntrega = prazoEntrega;
+    }
+
+    // Metodos
     // Local Prateleira
     public String getLocalPrateleira(){
         return localPrateleira;
@@ -47,5 +61,20 @@ public class LivroBiblioteca extends Livro{
 
     public void Devolver(){
         System.out.println("Estou devolvendo...");
+    }
+
+    @Override 
+    public void Localizar(){
+        System.out.println("Estou localizando livro de biblioteca");
+    }
+
+    @Override
+    public void Cadastrar(){
+        System.out.println("Estou cadastrando o livro de biblioteca");
+    }
+
+    @Override
+    public void Ler(){
+        System.out.println("Estou lendo o livro de biblioteca");
     }
 }

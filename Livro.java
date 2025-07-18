@@ -16,6 +16,24 @@ public class Livro {
         this.edicao = 0;
     }
 
+    Livro(int codigo,String titulo){
+    this.codigo = codigo;
+    this.titulo = titulo;
+    this.autor = "";
+    this.editora = "";
+    this.nrPaginas = 0;
+    this.edicao = 0;
+    }
+    
+    Livro(int codigo,String titulo, String autor, String editora, int nrPaginas, int edicao){
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editora = editora;
+        this.nrPaginas = nrPaginas;
+        this.edicao = edicao;
+    }
+
     // Metodo de acesso á um atributo que é privado Código
     public int getCodigo(){
         return codigo;

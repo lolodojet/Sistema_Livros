@@ -85,11 +85,22 @@ public class SistemaLivro {
         "\nNovo usado: "+livro_livraria.getNovoUsado();
         System.out.println("Livro Livraria: "+mensagem);
     
+        // Método construtor
         Livro novoLivro = new Livro();
         System.out.println("Novo Livro: "+novoLivro.getTitulo());
         novoLivro.setTitulo("Novo Título");
         System.out.println("Novo livro: "+novoLivro.getTitulo());
 
+        // Método construtor com parâmetro 
+        Livro livro2 = new Livro(99, "Titanic");
+        System.out.println("Livro 2: "+livro2.getTitulo());
+        System.out.println("Código Livro 2: "+livro2.getCodigo());
 
-    }  
+        Livro livro3 = new Livro(1, "Rapunzel", "Andreisse", "Bosch", 200, 7);
+        System.out.println("Livro 3: "+livro3.getTitulo());
+        System.out.println("Código Livro 3: "+livro3.getCodigo());
+
+        LivroBiblioteca livroBiblioteca2 = new LivroBiblioteca(2, "Crepusculo", "Vampiro", "DudãoSA", 350, 20, "C318", "Romance", "Heloisa", 10);
+
+    }   
 }
